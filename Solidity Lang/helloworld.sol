@@ -22,3 +22,19 @@ contract helloworld{
         return message;
     }
 }
+
+//"Hello World!" with getter and setter functions
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8;
+
+contract helloworld{
+    string private message;
+    //takes string from console
+    function setter(string memory _message)public{
+        message = _message;
+    }
+    //writes the string
+    function getter()public view returns(string memory){
+        return message;
+    }
+}
